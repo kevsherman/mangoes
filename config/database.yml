@@ -18,8 +18,11 @@ development:
 #   pool: 5
 #   timeout: 5000
 
-# production:
-#   adapter: sqlite3
-#   database: db/production.sqlite3
-#   pool: 5
-#   timeout: 5000
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: mangoes_production
+  pool: 5
+  username: Kevin
+  password: 
+

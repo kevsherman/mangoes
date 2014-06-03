@@ -9,6 +9,7 @@ group :development do
   gem 'pry'
 end
 
+gem 'thin'
 
 gem 'pg'
 

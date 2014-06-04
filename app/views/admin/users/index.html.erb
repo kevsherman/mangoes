@@ -1,1 +1,10 @@
+
+<%= link_to "Home", root_path %>
 <h1>Hello Admin</h1>
+
+<% @users.each do |user| %>
+
+<%= user.firstname %>
+<%= user.lastname %><br>
+
+<%end%>

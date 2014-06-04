@@ -10,7 +10,7 @@ group :development do
 end
 
 gem 'thin'
-
+gem 'kaminari'
 gem 'pg'
 
 gem 'carrierwave'

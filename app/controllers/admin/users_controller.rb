@@ -2,9 +2,9 @@ class Admin::UsersController < UsersController
 
   def index
     if admin?
-      @users = User.all
+      @users = User.all.page(params[:page]).per(5)
     else
-      flash[:alert] = "Fuck off, you're not allowed here"
+      flash[:alert] = "Fuck off, only admins in the admins area!"
       redirect_to root_path
     end
   end

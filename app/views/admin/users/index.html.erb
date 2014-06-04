@@ -2,10 +2,14 @@
 <%= link_to "Home", root_path %>
 <h1>Hello Admin</h1>
 
-<%= paginate @users %>
+<%= paginate @users %><br>
 <% @users.each do |user| %>
 
-<%= user.firstname %>
-<%= user.lastname %><br>
+<%= link_to user.full_name, admin_user_path(user) %><br>
 
 <%end%>
+
+
+<hr>
+
+<h4><%= link_to "Create New User", new_admin_user_path %></h4>
